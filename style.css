@@ -16,7 +16,6 @@ a {
 
 body {
     background-color: cornsilk;
-    color: blue;
 }
 
 .left-column {
@@ -117,4 +116,132 @@ body {
     top: 0;
     background-color: chartreuse;
     position: absolute;
+}
+
+
+/*Main Content Container*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 6%;
+}
+
+.left-column-sidebar,
+.right-column-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+
+
+/*Left Sidebar*/
+
+.profile-container,
+.user-activities {
+    background-color: white;
+}
+
+.profile-info {
+    padding: 0 25px;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    margin-top: -45px;
+    margin-right: 5px;
+}
+
+.profile-info h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.profile-info h3 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#about-user {
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+#about-user li {
+    margin: 8px;
+    font-size: 13px;
+}
+
+#about-user li span {
+    float: right;
+    font-weight: bold;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.profile-links a {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+}
+
+.profile-links a:first-child {
+    border-left: 0;
+}
+
+.profile-links a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.user-activities {
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+
+.user-activities h3 {
+    font-size: 15px;
+    margin: 20px 10px;
+}
+
+.user-activities a {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.user-activities a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.more-info {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.more-info a {
+    display: inline-block;
+    color: blue;
+    margin: 10px 0;
+}
+
+
+/*Center content*/
+
+.Center-Main-Content {
+    flex-basis: 47%;
 }
