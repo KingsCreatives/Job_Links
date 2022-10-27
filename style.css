@@ -18,6 +18,9 @@ body {
     background-color: cornsilk;
 }
 
+
+/*Header Navs*/
+
 .left-column {
     display: inline-flex;
     gap: 10px;
@@ -51,13 +54,15 @@ body {
 }
 
 .main-nav {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 5px 5%;
+    margin-bottom: 30px;
 }
 
 .center ul li {
@@ -122,6 +127,7 @@ body {
 /*Main Content Container*/
 
 .container {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -244,4 +250,124 @@ body {
 
 .Center-Main-Content {
     flex-basis: 47%;
+}
+
+
+/*Right sidebar*/
+
+.news-and-more {
+    background-color: white;
+    padding: 20px 25px;
+}
+
+.info-icon {
+    width: 25px;
+    margin-top: 5px;
+    float: right;
+}
+
+.news-and-more h1 {
+    padding-top: 30px;
+    margin: 10px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.news-and-more img {
+    padding-top: 30px;
+}
+
+.news-and-more a {
+    display: block;
+    font-size: 15px;
+    font-weight: 600px;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+.news-and-more span {
+    font-size: 15px;
+}
+
+.more-trending-news {
+    color: #045be6;
+    font-weight: 500px;
+    margin: 20px 0 10px;
+}
+
+
+/*Ads */
+
+.advertisement {
+    margin: 12px 0;
+    background-color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.advertisement small {
+    float: right;
+    font-weight: 500;
+}
+
+.advertisement p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.advertisement b {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    border: 1px solid #045be6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.ads-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertisement img {
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    text-align: center;
+}
+
+
+/*Useful links*/
+
+.useful-links {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.useful-links a {
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.copy-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.copy-right img {
+    margin-right: 5px;
 }
