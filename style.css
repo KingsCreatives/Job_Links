@@ -15,7 +15,8 @@ a {
 }
 
 body {
-    background-color: cornsilk;
+    background-color: #f0f2f5;
+    color: #5f5f5f;
 }
 
 
@@ -59,10 +60,11 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    position: fixed;
+    position: sticky;
+    z-index: 100;
     top: 0;
-    padding: 5px 5%;
-    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 6px 6%;
 }
 
 .center ul li {
@@ -267,7 +269,7 @@ body {
 }
 
 .news-and-more h1 {
-    padding-top: 30px;
+    padding-top: 5px;
     margin: 10px 0 30px;
     font-size: 18px;
     font-weight: 600;
@@ -275,7 +277,7 @@ body {
 }
 
 .news-and-more img {
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 .news-and-more a {
