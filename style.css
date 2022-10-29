@@ -141,6 +141,8 @@ li {
 .right-column-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 
 
@@ -348,13 +350,13 @@ li {
     margin: 5px 0 15px;
 }
 
-.post.one {
+.post {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.post.one img {
+.post img {
     margin-top: 5px;
     border-radius: 50%;
     width: 35px;
@@ -399,6 +401,35 @@ li {
 
 .post-icons span {
     margin-left: 10px;
+}
+
+.like-and-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.post-activity {
+    display: flex;
+    align-items: center;
+}
+
+.post-img {
+    border-radius: 50%;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.down-arrow {
+    width: 12px;
+}
+
+.buttons img {
+    width: 20px;
+    margin-right: 5px;
 }
 
 
