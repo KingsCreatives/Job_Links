@@ -20,6 +20,12 @@ li {
     list-style: none;
 }
 
+header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
 
 /*Header Navs*/
 
@@ -61,9 +67,6 @@ li {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    position: sticky;
-    z-index: 100;
-    top: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 6px 6%;
 }
@@ -621,4 +624,172 @@ li {
     width: 35px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+
+/*Profile page*/
+
+.main-profile {
+    flex-basis: 73%;
+}
+
+.profile-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73%;
+}
+
+.user-profile-wrapper {
+    background-color: white;
+}
+
+.inner {
+    padding: 0 4% 10px;
+}
+
+#user-img {
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -75px;
+    width: 150px;
+    background-color: white;
+}
+
+.inner h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.inner p {
+    margin-top: 5px;
+}
+
+.inner p a {
+    font-weight: 500;
+}
+
+.connections {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.connections img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-btns {
+    margin: 20px 0;
+}
+
+#chat,
+#connect {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e4e6eb;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.profile-btns a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#connect {
+    background-color: #045be6;
+    color: white;
+}
+
+.profile-desc {
+    background-color: white;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+}
+
+.profile-desc h2 {
+    color: #333;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+.see-more {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.desc-row {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.desc-row img {
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.desc-row div {
+    width: 100%;
+}
+
+.desc-row h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.desc-row b {
+    display: block;
+    font-size: 15px;
+}
+
+.desc-row p {
+    margin-top: 15px;
+}
+
+.desc-row hr {
+    border: 0;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+#view-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+#view-all img {
+    width: 20px;
+    margin-left: 8px;
+}
+
+.skills {
+    color: #5f5f5f;
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 10px 5px;
+    border: 1px solid #777;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.language {
+    color: #5f5f5f;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    background-color: #e4e6eb;
+    font-size: 12px;
 }
