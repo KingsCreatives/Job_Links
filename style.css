@@ -860,4 +860,72 @@ header {
 
 /*Media query for small screens*/
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .search-box {
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+    .search-box input {
+        width: 0;
+        padding: 0;
+    }
+    .center ul li a span {
+        display: none;
+    }
+    .center ul li a {
+        padding-right: 0;
+        margin: 5px;
+    }
+    .profile-pic {
+        width: 20px;
+    }
+    .container {
+        padding: 15px 3%;
+    }
+    .left-column-sidebar,
+    .right-column-sidebar {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+    .Center-Main-Content {
+        flex-basis: 100%;
+    }
+    .postStats div {
+        margin: 2px 0;
+    }
+    .buttons span {
+        display: none;
+    }
+    .buttons img {
+        margin-right: 0;
+    }
+    .main-profile,
+    .profile-sidebar {
+        flex-basis: 100%;
+    }
+    .user-profile-wrapper {
+        font-size: 14px;
+    }
+    #user-img {
+        width: 100px;
+        margin-top: -50px;
+    }
+    .profile-desc {
+        font-size: 14px;
+    }
+    #show_more_text {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .user-activities {
+        display: none;
+    }
+    .user-activities.open {
+        display: block;
+    }
+}
