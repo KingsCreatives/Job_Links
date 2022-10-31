@@ -637,7 +637,7 @@ header {
     flex-basis: 25%;
     align-self: flex-start;
     position: sticky;
-    top: 73%;
+    top: 73px;
 }
 
 .user-profile-wrapper {
@@ -793,3 +793,71 @@ header {
     background-color: #e4e6eb;
     font-size: 12px;
 }
+
+
+/*Profile page Sidebar*/
+
+.advertisement.first.ad {
+    margin: 0;
+}
+
+.people-connections {
+    background-color: white;
+    padding: 15px 25px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.people-connections h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
+
+.people-row {
+    display: flex;
+    align-items: flex-start;
+    margin: 6px 0;
+}
+
+.people-row img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.people-row h2 {
+    font-size: 500;
+    font-size: 16px;
+}
+
+.people-row a {
+    font-weight: 500;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 25px;
+    border: 1px solid #5f5f5f;
+}
+
+
+/*Profile footer*/
+
+.profile-footer {
+    padding: 0 6% 30px;
+}
+
+.profile-footer .useful-links {
+    text-align: left;
+    padding: 0;
+}
+
+.profile-footer #copy-right {
+    justify-content: flex-start;
+}
+
+
+/*Media query for small screens*/
+
+@media only screen and (max-width: 600px) {}
