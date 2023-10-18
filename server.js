@@ -23,21 +23,18 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     });
 
 // home
-app.get('/',(request, response)=>{
-    db.collection('joblink').find().toArray()
-    .then(data => {
-        response.render('index.ejs', { info: data })
-    })
-    .catch(error => console.error(error))
+app.get('/', async(request, response)=>{
+    const data = await db.collection('joblink').find().toArray()
+    
+    response.render('index.ejs', { info: data })
 })
 
 // profile
-app.get('/profile',(request, response)=>{
-    db.collection('joblink').find().toArray()
-    .then(data => {
-        response.render('profile.ejs', { info: data })
-    })
-    .catch(error => console.error(error))
+app.get('/profile', async (request, response)=>{
+    const data = await db.collection('joblink').find().toArray()
+
+    response.render('profile.ejs', { info: data })
+    
 })
 
 
