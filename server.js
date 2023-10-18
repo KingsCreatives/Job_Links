@@ -2,9 +2,7 @@ const express = require('express');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
 const PORT = 8000;
-// const cors = require('cors');
-
-
+require('dotenv').config()
 
 // set up server
 app.set('view engine', 'ejs');
@@ -15,7 +13,7 @@ app.use(express.json());
 
 // db set
 let db,
-    dbConnectionStr = 'mongodb+srv://kwamecody:1234@cluster0.t4d35ct.mongodb.net/?retryWrites=true&w=majority',
+    dbConnectionStr = process.env.DB_STRING,
     dbName = 'joblinks';
 
 MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
